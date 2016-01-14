@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'foundation-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
@@ -39,6 +39,12 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'ffaker'
   gem 'factory_girl_rails'
+  gem 'pry-rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'factory_girl'
+  gem 'valid_attribute'
+  gem 'shoulda-matchers', require: false
 end
 
 group :development do
