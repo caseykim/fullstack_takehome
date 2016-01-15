@@ -32,6 +32,7 @@
 
 .top-bar {
   border-color: rgba(66, 70, 77, 0.75);
+  text-transform: uppercase;
 }
 
 .top-bar-section {
@@ -48,4 +49,24 @@
 
 .right {
   float: right;
+}
+
+.page-nav {
+  position: fixed;
+
+  a {
+    display: inline;
+  }
+}
+
+.video-box {
+  width: inherit;
+  height: 180px;
+  padding-bottom: 0.5em;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.58);
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.58);
 }

@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "highcharts-rails", "~> 3.0.0"
+gem 'kaminari'
 gem 'foundation-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
