@@ -7,11 +7,26 @@
     <title>FullscreenInterview</title>
 
     <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/">Fullscreen_Casey</a></h1>
+        </li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><%= link_to "Videos", videos_path %></li>
+          <li><%= link_to "Users", users_path %></li>
+        </ul>
+      </section>
+    </nav>
+    <div class="main">
+      <%= yield %>
+    </div>
   </body>
 </html>

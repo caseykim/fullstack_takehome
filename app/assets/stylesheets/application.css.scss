@@ -15,3 +15,37 @@
  *= require foundation_and_overrides
 
  */
+.body {
+  color: #16141f;
+  margin: 0;
+  padding: 0;
+  font-family: "Etica W01 Book", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main {
+  margin: auto;
+  width: 80%;
+  padding: 0.5em;
+}
+
+.top-bar {
+  border-color: rgba(66, 70, 77, 0.75);
+}
+
+.top-bar-section {
+  li {
+    list-style: none;
+    display: inline;
+    padding: 0.5em;
+  }
+}
+
+.title-area {
+  float: left;
+}
+
+.right {
+  float: right;
+}
