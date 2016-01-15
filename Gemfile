@@ -31,6 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'ffaker'
 
 group :production do
   gem 'pg'
@@ -42,7 +43,6 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec', '2.14.1'
   gem 'rspec-rails'
-  gem 'ffaker'
   gem 'factory_girl_rails'
   gem 'pry-rails'
   gem 'capybara'
