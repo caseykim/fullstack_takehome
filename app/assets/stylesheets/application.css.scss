@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+.body {
+  color: #16141f;
+  margin: 0;
+  padding: 0;
+  font-family: "Etica W01 Book", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main {
+  margin: auto;
+  width: 80%;
+  padding: 0.5em;
+}
+
+.top-bar {
+  border-color: rgba(66, 70, 77, 0.75);
+  text-transform: uppercase;
+}
+
+.top-bar-section {
+  li {
+    list-style: none;
+    display: inline;
+    padding: 0.5em;
+  }
+}
+
+.title-area {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.page-nav {
+  position: fixed;
+
+  a {
+    display: inline;
+  }
+}
+
+.video-box {
+  width: inherit;
+  height: 180px;
+  padding-bottom: 0.5em;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.58);
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.58);
+}

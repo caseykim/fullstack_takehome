@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'videos#index'
+  root 'homes#index'
 
   resources :videos, only: [:index, :show]
   resources :users, only: [:index, :show]

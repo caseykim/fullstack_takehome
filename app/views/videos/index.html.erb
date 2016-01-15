@@ -1,3 +1,13 @@
-<% @videos.each do |video| %>
-  <%= link_to video.title, video_path(video) %>
-<% end %>
+<div class="row">
+  <% @videos.each do |video| %>
+    <div class="medium-3 columns end">
+      <div class="video-box">
+        <%= link_to video.title, video_path(video) %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<div class="page-nav">
+  <%= paginate @videos %>
+</div>

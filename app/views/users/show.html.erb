@@ -1,4 +1,14 @@
-<%= @user.name %>
-<% @user.videos.each do |video| %>
-  <%= video.title %>
-<% end %>
+<h2>
+  <%= @user.name %>
+</h2>
+<h4>
+  Watched <%= @user.videos.count %> videos
+</h4>
+
+<ul>
+  <% @user.videos.each do |video| %>
+    <li>
+      <%= video.title %>
+    </li>
+  <% end %>
+</ul>
