@@ -11,7 +11,9 @@ $(function () {
 
     $('#container-video').highcharts({
         chart: {
-            type: 'area'
+            type: 'area',
+            width: 1000,
+            zoomType: 'y'
         },
         title: {
             text: 'Videos'
