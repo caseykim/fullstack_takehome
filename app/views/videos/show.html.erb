@@ -6,9 +6,13 @@
 </h4>
 
 <ul>
-  <% @video.users.each do |user| %>
+  <% @users.each do |user| %>
     <li>
       <%= user.name %>
     </li>
   <% end %>
 </ul>
+
+<div class="page-nav">
+  <%= paginate @users %>
+</div>
