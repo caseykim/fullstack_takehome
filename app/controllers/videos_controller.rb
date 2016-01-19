@@ -14,5 +14,6 @@ class VideosController < ApplicationController
 
   def show
     @video = Video.find(params[:id])
+    @users = @video.users.page params[:page]
   end
 end
