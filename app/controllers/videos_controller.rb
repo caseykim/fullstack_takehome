@@ -1,9 +1,11 @@
 class VideosController < ApplicationController
   def index
-    @videos = Video.sort_by_viewers.page params[:page]
     respond_to do |format|
-      format.html
+      format.html do
+        @videos = Video.sort_by_viewers.page params[:page]
+      end
       format.json do
+        @videos = Video.all
         video_names = @videos.map { |video| video.title }
         video_views = @videos.map { |video| video.users.count }
 
